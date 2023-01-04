@@ -6,6 +6,7 @@ import PokemonsSearchResult from "../components/PokemonsSearchResult";
 
 export default function IndexPage() {
   const [searchValue, setSearchValue] = React.useState("");
+  //su dung debound de chong user Spam ky tu search
   const debounedSearchValue = useDebounce(searchValue, 300);
 
   const { isLoading, isError, isSuccess, data } = useQuery(
